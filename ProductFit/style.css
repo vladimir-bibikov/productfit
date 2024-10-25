@@ -1,0 +1,743 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: url(fonts/Gilroy-Light.otf)
+}
+
+@font-face {
+    font-family: 'GilroyB';
+    src: url(fonts/Gilroy-ExtraBold.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    border: none;
+    text-decoration: none;
+}
+
+body {
+    width: 1440px;
+    margin: 0 auto;
+    background-color: #F8ffff;
+
+    @media (max-width: 479px) {
+        width: 100vw;
+    }
+}
+
+
+.top {
+    padding: 31px 168px 56px 178px;
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 479px) {
+        /* width: 100vw; */
+        padding: 44px 46px 63px 47px;
+        justify-content: center;
+    }
+}
+
+.logo {
+    width: 239px;
+    height: 58px;
+    margin-right: 242px;
+
+    @media (max-width: 479px) {
+        width: 318px;
+        height: 77px;
+        margin-right: 0;
+    }
+}
+
+.top ul {
+    display: flex;
+    align-items: center;
+    font-family: Gilroy;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.81px;
+    color: #1E959B;
+
+    @media (max-width: 479px)  { 
+            display: none;
+        
+    }
+}
+
+
+
+.last {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.last::before {
+    content: url(images/Group.png);
+}
+
+.top li {
+    margin-right: 57px;
+}
+
+button {
+    background-color: #F05670;
+    color: #fff;
+    border-radius: 20px;
+    transition: all .3s ease;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #f4d1d7;
+    color: #F05670;
+}
+
+.top button {
+    padding: 23px 40px;
+    font-family: Gilroy;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17.33px;
+    border-radius: 15px;
+}
+
+.middle {
+    padding: 0 220px 0 185px;
+    display: flex;
+    align-items: center;
+    gap: 94px;
+    overflow: hidden;
+
+    @media (max-width: 479px) {
+        /* width: 100vw; */
+        padding: 0;
+        position: relative;
+        flex-direction: column;
+        width: 100%;
+        padding-bottom: 163px;
+    }
+}
+
+.product {
+    width: 325px;
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: 479px) {
+        align-items: center;
+        
+    }
+}
+
+h1 {
+    width: 230px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    font-family: GilroyB;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    color: #1E959B;
+}
+
+.product p {
+    margin-bottom: 50px;
+    font-family: Gilroy;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #3C3C3C;
+
+    @media (max-width: 479px) {
+        margin-bottom: 152px;
+    }
+}
+
+.middle button {
+    width: 232px;
+    padding: 25px 24px;
+    font-family: Gilroy;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.81px;
+    box-shadow: 0px 5px 10px 0px #1E959B80;
+}
+
+.banner {
+    background-image: url(images/Frame.png);
+    width: 621px;
+    height: 509px;
+
+    @media (max-width: 479px) {
+        position: absolute;
+        z-index: -1;
+        left: -180px;
+        bottom: -120px;
+    }
+}
+
+
+.bottom {
+    width: 100%;
+    margin-top: 60px;
+    padding: 10px 132px 10px 141px;
+    display: flex;
+    align-items: center;
+    gap: 59px;
+    background-color: #1E959B;
+
+    @media (max-width: 479px) {
+        position: relative;
+        margin-top: 0;
+        padding: 17px 0;
+        justify-content: center;
+    }
+}
+
+.bottom img:not(:first-child) {
+    @media (max-width: 479px) {
+        display: none;
+    }
+}
+
+.woof_big {
+    @media (max-width: 479px) {
+        display: none;
+    }
+}
+
+#woof_small {
+    display: none;
+
+    @media (max-width: 479px) {
+        display: block;
+        padding-left: 220px;
+    }
+}
+
+#true {
+    @media (max-width: 479px) {
+        display: block;
+        opacity: 0.3;
+    }
+}
+
+#l_u {
+    display: none;
+
+    @media (max-width: 479px) {
+        display: block;
+        position: absolute;
+        top: 34px;
+        left: 36px;
+    }
+}
+
+#r_u {
+    display: none;
+
+    @media (max-width: 479px) {
+        display: inline-block;
+        position: absolute;
+        top: 34px;
+        right: 33.37px;
+    }
+}
+
+.options {
+    margin-top: 120px;
+    margin-bottom: 33px;
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+
+    @media (max-width: 479px) {
+        margin-top: 90px;
+        position: relative;
+    }
+}
+
+#o_l {
+    display: none;
+
+    @media (max-width: 479px) {
+        display: block;
+        position: absolute;
+        top: 71px;
+        left: 36px;
+    }
+}
+
+#r_l {
+    display: none;
+
+    @media (max-width: 479px) {
+        display: block;
+        position: absolute;
+        top: 71px;
+        right: 36.86px;
+    }
+}
+
+
+.opt_card {
+    padding: 27px 14px 19px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+    justify-content: end;
+    align-items: center;
+    text-transform: uppercase;
+    width: 195px;
+    height: 164px;
+    border-radius: 25px;
+    box-shadow: 0px 4px 4px 0px #1E959B80, 0 0 0 0 #1E959B inset;
+    transition: all .3s ease;
+
+    @media (max-width: 479px) {
+        display: none;
+    }
+}
+
+#f_ch {
+    @media (max-width: 479px) {
+        display: flex;
+    }
+}
+
+.opt_card:hover {
+    cursor: pointer;
+    box-shadow: 0 0 0 0 #1E959B, 0px 4px 4px 0px #1E959B80 inset;
+}
+
+.options p {
+    font-family: Gilroy;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+    text-align: center;
+    color: #3C3C3C;
+}
+
+.opt_act {
+    padding: 0 184px 0 174px;
+    display: flex;
+    align-items: center;
+    gap: 105px;
+
+    @media (max-width: 479px) {
+        padding: 0;
+        justify-content: center;
+    }
+}
+
+
+.banner2 {
+    background-image: url(images/image\ 2.png);
+    width: 606px;
+    height: 508px;
+
+    @media (max-width: 479px) {
+        display: none;
+    }
+}
+
+.opt_act .product {
+    width: 371px;
+
+    @media (max-width: 479px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+h2 {
+    margin-bottom: 27px;
+    font-family: GilroyB;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    color: #1E959B;
+    text-transform: uppercase;
+
+    @media (max-width: 479px) {
+        text-align: center;
+    }
+}
+
+.opt_act p {
+    margin-bottom: 44px;
+
+    @media (max-width: 479px) {
+        margin-bottom: 27px;
+        align-self: start;
+
+    }
+}
+
+#buben {
+    display: none;
+
+    @media (max-width: 479px) {
+        display: block;
+        margin-bottom: 27.48px;
+    }
+}
+
+.opt_act button {
+    width: 257px;
+    padding: 25px 21px;
+    box-shadow: 0px 5px 10px 0px #1E959B80;
+    font-family: Gilroy;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.81px;
+}
+
+
+.projects {
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 320px);
+    grid-column-gap: 62px;
+    grid-row-gap: 46px;
+}
+
+.card {
+    padding: 25px 42px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(180deg, #FFFFFF 0%, #F7F9FD 100%);
+    border-radius: 25px;
+    font-family: Gilroy;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+    box-shadow: 0px 15px 15px -15px #1E959B80;
+}
+
+.card h3 {
+    margin-top: 19px;
+    margin-bottom: 5px;
+    font-family: Gilroy;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.81px;
+    color: #1E959B;
+}
+
+.projects button {
+    margin-top: 44px;
+    padding: 25px 63px;
+    font-family: Gilroy;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.81px;
+    text-transform: uppercase;
+    color: #1E959B;
+    border: 1px solid;
+    border-image-source: linear-gradient(0deg, #000000, #000000),
+    linear-gradient(0deg, #1E959B, #1E959B);
+    box-shadow: 0px 5px 10px 0px #1E959B80;
+    background-color: #fff;   
+}
+
+.projects button:hover {
+    color: #fff;
+    background-color: #1E959B;
+}
+
+.blog {
+    position: relative;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    padding: 30px 126px 30px 158px;
+    background: #F8FFFF;
+    display: flex;
+    align-items: center;
+    gap: 79px;
+    overflow: hidden;
+}
+
+.post {
+    width: 608px;
+}
+
+.post h4 {
+    margin-bottom: 6px;
+    font-family: Gilroy;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 40px;
+    color: #F05670;
+}
+
+.post p {
+    font-family: Gilroy;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    color: #1E959B;
+    text-transform: uppercase;
+}
+
+.character {
+    width: 469px;
+    height: 390px;
+    background-image: url(images/Character.png);
+}
+
+.circle {
+    position: absolute;
+    background-color: #1E959B;
+    border-radius: 50%;
+}
+
+.c98 {
+    width: 98px;
+    height: 98px;
+    top: -30px;
+    left: 123px;
+    opacity: 0.5;
+}
+
+.c87 {
+    width: 87px;
+    height: 87px;
+    top: 343px;
+    left: -38px;
+    opacity: 0.15;
+}
+
+.c174 {
+    width: 174px;
+    height: 174px;
+    top: 363px;
+    left: 708px;
+    opacity: 0.5;
+}
+
+.c82 {
+    width: 82px;
+    height: 82px;
+    top: -23px;
+    left: 1399px;
+    opacity: 0.15;
+}
+
+.left {
+    position: absolute;
+    width: 16.01px;
+    height: 22.6px;
+    top: 225px;
+    left: 60.32px;
+}
+
+.right {
+    position: absolute;
+    width: 16.01px;
+    height: 22.6px;
+    top: 225px;
+    left: 1379.32px;
+}
+
+.showcase {
+    position: relative;
+}
+
+.grid1 {
+    padding: 0 67px;
+    display: grid;
+    grid-template-rows: repeat(2, 348px);
+    grid-template-columns: repeat(4, 289px);
+    row-gap: 40px;
+    column-gap: 50px;
+}
+
+.card1 {
+    height: 305px;
+    background: linear-gradient(180deg, #FFFFFF 0%, #F7F9FD 100%);
+    box-shadow: 0px 5px 10px 0px #1E959B80;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card1 .circle {
+    position: static;
+    width: 182px;
+    height: 182px;
+    margin-top: -43px;
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h5 {
+    margin-bottom: 27px;
+    text-transform: uppercase;
+    color: #1E959B;
+    font-family: Gilroy;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29.71px;
+    text-align: center;
+}
+
+.toxic {
+    margin-bottom: 14px;
+}
+
+.card1:nth-child(3) .circle {
+    margin-bottom: 16px;
+}
+
+.showcase button {
+    padding: 24px 65px 22px 66px;
+}
+
+.line {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 154px;
+    background-color: #1E959B;
+}
+
+.up {
+    top: 78px;
+}
+
+.down {
+    bottom: 120px;
+}
+
+.request {
+    margin-top: 120px;
+    margin-bottom: 84.75px;
+    padding: 0 349.47px 0 325px;
+    display: flex;
+    align-items: center;
+    gap: 113.6px;
+}
+
+.req_img {
+    width: 322.4px;
+    height: 315.25px;
+    background-image: url(images/req_img.png);
+}
+
+.request button {
+    padding: 37px 56.53px 32px 57px;
+    font-family: Gilroy;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29.71px;
+    text-align: center;
+}
+
+footer {
+    position: relative;
+    padding: 44px 105px 62px 104px;
+    display: flex;
+    align-items: center;
+}
+
+footer p {
+    width: 290.2px;
+    height: 136px;
+    margin-left: 20.01px;
+    font-family: Gilroy;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+}
+
+footer .logo {
+    height: 56px;
+    margin-right: 40.03px;
+}
+
+.mobile, .connect {
+    display: flex;
+    flex-direction: column;
+}
+
+footer a {
+    color: #1E959B;
+}
+
+.mobile {
+    gap: 22px;
+    font-family: Gilroy;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+}
+
+.connect {
+    margin-left: 33px;
+    margin-right: 20px;
+    height: 66.69px;
+    font-family: GilroyB;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.81px;
+    justify-content: space-between;
+}
+
+.tel {
+    display: flex;
+    align-items: center;
+    gap: 16.07px;
+}
+
+.tel::before {
+    content: url(images/Group.png);
+}
+
+.more {
+    display: flex;
+    align-items: center;
+}
+
+.foo {
+    margin-bottom: 22px;
+}
+
+.tg {
+    margin-right: 20px;
+}
+
+.mail {
+    margin-right: 38px;
+}
+
+.mark {
+    margin-left: 0;
+    position: absolute;
+    left: 617.43px;
+    top: 185px;
+    font-family: Gilroy;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    color: #3C3C3C;
+    opacity: 0.5;
+}
+
+
